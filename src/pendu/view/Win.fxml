@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="525.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pendu.controller.WinController">
+    <children>
+        <Pane layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <JFXButton fx:id="ouiButton" buttonType="RAISED" layoutX="28.0" layoutY="327.0" onAction="#oui" prefHeight="44.0" prefWidth="172.0" style="-fx-background-color: #03A9F4;" text="Oui" textAlignment="CENTER" textFill="WHITE" />
+            <ImageView fx:id="imageView" fitHeight="155.0" fitWidth="277.0" layoutX="114.0" layoutY="39.0" pickOnBounds="true" />
+            <JFXButton fx:id="nonButton" buttonType="RAISED" layoutX="305.0" layoutY="327.0" onAction="#non" prefHeight="44.0" prefWidth="172.0" style="-fx-background-color: #03A9F4;" text="Non" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="163.0" layoutY="276.0" prefHeight="24.0" prefWidth="180.0" text="Voulez-vous Enregistrer le score :" />
+            <HBox layoutX="190.0" layoutY="215.0" prefHeight="44.0" prefWidth="125.0">
+               <children>
+                  <Label prefHeight="71.0" prefWidth="90.0" text="Votre Score est : " />
+                  <Label fx:id="scoreLabel" prefHeight="44.0" prefWidth="35.0" text="Score" />
+               </children>
+            </HBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

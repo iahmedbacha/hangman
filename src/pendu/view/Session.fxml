@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #ffffff; -fx-background-image: ;" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pendu.controller.SessionController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="480.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox layoutX="14.0" layoutY="12.0">
+               <children>
+                  <Label text="Score actuel : " />
+                  <Label fx:id="scoreActuel" text="Score actuel" />
+               </children>
+            </HBox>
+            <HBox layoutX="309.0" layoutY="12.0">
+               <children>
+                  <Label text="Meilleur score : " />
+                  <Label fx:id="meilleurScore" text="Meilleur score" />
+               </children>
+            </HBox>
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="252.0" layoutY="40.0" pickOnBounds="true" />
+            <VBox layoutX="11.0" layoutY="217.0" prefWidth="450.0">
+               <children>
+                  <HBox prefHeight="14.0" prefWidth="424.0">
+                     <children>
+                        <Label text="Mot N° : " />
+                        <Label fx:id="numMot" text="Numero du mot" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="17.0">
+                     <children>
+                        <Label text="Nombre d'essais restants : " />
+                        <Label fx:id="nbEssaisRestants" text="nbEssaisRestants" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="41.0" prefWidth="450.0">
+                     <children>
+                        <Label fx:id="typeIndication" text="Type d'indication" />
+                        <Label text=" : " />
+                        <Label fx:id="indication" text="Indication" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <JFXButton fx:id="abondonner" buttonType="RAISED" layoutX="14.0" layoutY="341.0" onAction="#abondonner" style="-fx-background-color: #03A9F4;" text="Abandonner la session" textAlignment="CENTER" textFill="WHITE" />
+            <HBox fx:id="motHbox" layoutX="11.0" layoutY="286.0" prefHeight="41.0" prefWidth="450.0" />
+            <Label layoutX="66.0" layoutY="46.0" prefHeight="25.0" prefWidth="113.0" text="Zéro Chance" />
+            <Label layoutX="66.0" layoutY="82.0" prefHeight="25.0" prefWidth="113.0" text="Multi Chance" />
+            <Label layoutX="66.0" layoutY="115.0" prefHeight="25.0" prefWidth="113.0" text="Propositions" />
+            <Label layoutX="14.0" layoutY="50.0" prefHeight="17.0" prefWidth="25.0" style="-fx-background-color:#FF8A65 " text=" " />
+            <Label layoutX="14.0" layoutY="86.0" prefHeight="17.0" prefWidth="25.0" style="-fx-background-color:#AED581 " text=" " />
+            <Label layoutX="14.0" layoutY="119.0" prefHeight="17.0" prefWidth="25.0" style="-fx-background-color:#FFD54F " text=" " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="525.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pendu.controller.MenuController">
+    <children>
+        <Pane layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <JFXButton fx:id="jouerButton" buttonType="RAISED" layoutX="167.0" layoutY="126.0" onAction="#jouer" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #03A9F4;" text="Lancer une nouvelle session" textAlignment="CENTER" textFill="WHITE" />
+            <JFXButton fx:id="scoresButton" buttonType="RAISED" layoutX="167.0" layoutY="179.0" onAction="#scores" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #03A9F4;" text="Afficher les scores" textAlignment="CENTER" textFill="WHITE" />
+            <JFXButton fx:id="deconnexionButton" buttonType="RAISED" layoutX="167.0" layoutY="334.0" onAction="#signout" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #03A9F4;" text="Déconnexion" textAlignment="CENTER" textFill="WHITE" />
+            <ImageView fx:id="imageView" fitHeight="85.0" fitWidth="236.0" layoutX="135.0" layoutY="22.0" pickOnBounds="true" />
+            <JFXButton fx:id="aproposButton" buttonType="RAISED" layoutX="167.0" layoutY="282.0" onAction="#apropos" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #03A9F4;" text="A propos" textAlignment="CENTER" textFill="WHITE" />
+            <JFXButton fx:id="aideButton" buttonType="RAISED" layoutX="167.0" layoutY="231.0" onAction="#aide" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #03A9F4;" text="Aide" textAlignment="CENTER" textFill="WHITE" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
